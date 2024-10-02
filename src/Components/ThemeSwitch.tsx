@@ -11,6 +11,8 @@ function ThemeSwitch() {
     const currentheme = theme === 'system' ? systemTheme: theme
   return (
     <div>
+      {/* A good way to switch between icons depending on usecase*/}
+      
         {currentheme === 'dark' ? <MdLightMode onClick={()=>setTheme('light')} className="text-xl cursor-pointer hover:text-amber-500"/ > 
         : <MdDarkMode onClick={()=>setTheme('dark')} className="text-xl cursor-pointer hover:text-amber-500"/> }
 
