@@ -26,7 +26,7 @@ function Results({results}:{results:res}) {
   return(
 
   <>
-    {results.map((result:any)=>(
+    {results.map((result)=>(
         <div key ={result.id}>
             <h2>{result.title}</h2>
         </div>
