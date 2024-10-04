@@ -3,9 +3,7 @@ import Movie from '../app/Types'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaRegThumbsUp } from "react-icons/fa";
-interface Cardprops{
-    result: Movie
-}
+
 
 function Card({result}:{result:Movie}) {
   return (
