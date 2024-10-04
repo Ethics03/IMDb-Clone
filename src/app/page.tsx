@@ -24,14 +24,14 @@ interface SearchParams{
     if(!res.ok){
       throw new Error('Failed to Fetch');
     }
-    else{
-      const results:Results = data.results;
-      console.log(results)
-    }
-  
+    
+      const results = data.results;
+     
+    
+
   return (
   <div>
-    <div>Home</div>
+      <Results results= {results}/>
    </div>
   )
 }
