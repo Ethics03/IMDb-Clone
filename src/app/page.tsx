@@ -6,9 +6,6 @@ interface SearchParams{
   genre: string
 }
 
-
-
-
  export default async function Home({searchParams}:{searchParams:SearchParams}) {
 
   const genre = searchParams.genre || 'fetchTrending';

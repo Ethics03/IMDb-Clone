@@ -1,10 +1,12 @@
 
 import React from 'react'
+import load from './load.svg'
+import Image from 'next/image';
 
 function loading() {
   return (
     <div className = 'flex justify-center mt-16'>
-        <img className = 'h-52' src = 'load.svg' alt = 'loading'></img>
+        <Image src= {load} width="50" height="50" className = 'mt-20' />
     </div>
   )
 }
