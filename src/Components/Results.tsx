@@ -28,7 +28,7 @@ function Results({results}:{results:res}) {
   <>
     {results.map((result)=>(
         <div key ={result.id}>
-            <h2>{result.title}</h2>
+            <h2>{result.original_title}</h2>
         </div>
   ))}
    </>
