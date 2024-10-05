@@ -8,7 +8,7 @@ interface Params{
 export default async function SearchPage({params}:{params:Params}) {
     const sTerm = params.searchTerm;
     const encodedSTerm = encodeURIComponent(sTerm);
-    const res = await fetch(`https://api.themoviedb.org/3/search/movie?query=${encodedSTerm}&api_key=${process.env.API_KEY}`);
+    const res = await fetch(`https://api.themoviedb.org/3/search/movie?query=${encodedSTerm}&api_key=${process.env.API_KEY}&include_adult=false`);
     const data = await res.json();
     const results = data.results;
   return (
