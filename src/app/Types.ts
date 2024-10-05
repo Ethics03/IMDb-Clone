@@ -8,6 +8,8 @@ export default interface Movie {
         original_title?: string; // Optional property
         overview?: string; // Optional property
         poster_path?: string | null; 
+        profile_path?: string;
+        logo_path?: string;
         media_type: 'movie' | 'tv'; 
         adult: boolean;
         original_language: string;
