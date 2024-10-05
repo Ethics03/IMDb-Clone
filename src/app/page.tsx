@@ -1,12 +1,19 @@
 import Results from '../Components/Results'
-
+import { Inter } from 'next/font/google';
 
 const API_KEY = process.env.API_KEY;
 interface SearchParams{
   genre: string
 }
 
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400','700'],
+})
+
  export default async function Home({searchParams}:{searchParams:SearchParams}) {
+
+
 
   const genre = searchParams.genre || 'fetchTrending';
 
@@ -26,8 +33,12 @@ interface SearchParams{
      
     
 
-  return (
-  <div>
+  return (  
+
+    
+
+
+  <div className = {inter.className}>
       <Results results= {results}/>
    </div>
   )
